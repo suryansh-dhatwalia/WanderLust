@@ -1,0 +1,15 @@
+# Node modules (do not push these!)
+node_modules/
+
+# Mac system file (auto-generated, unnecessary)
+.DS_Store
+
+# Log files (optional, if you ever log to .log files)
+*.log
+
+# Environment variables (if you use .env for secrets)
+.env
+
+# Optional: Ignore build or temp folders if you ever create them
+dist/
+tmp/

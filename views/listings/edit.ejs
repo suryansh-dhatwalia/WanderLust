@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate") %>
+
+    <div class="row mt-4">
+        <div class="col-8 offset-2" >
+        <h3>Update Your Listing</h3>
+        <form action="/listings/<%= listing._id %>?_method=PATCH" method="POST" novalidate class="needs-validation">
+
+            <div class="mb-3 mt-3">
+                <label for="title" class="form-label">Title</label>
+                <input name="listing[title]" placeholder="Enter title" type="text" class="form-control" value="<%=listing.title %>" required>
+            </div>
+    
+           
+            <div class="mb-3">
+                <label for="location" class="form-label">Enter location</label>
+            <input name="listing[location]" placeholder="Enter location" type="text"  class="form-control"value="<%=listing.location %>" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="imageUrl" class="form-label">Enter Image URL</label>
+                <input name="listing[image][url]" placeholder="Enter image" type="text" class="form-control" value="<%= listing.image.url %>" required>
+              </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="price" class="form-label">Enter Price</label>
+                    <input name="listing[price]" placeholder="Enter price" type="number" class="form-control" value="<%=listing.price %>" required>
+                    
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="country" class="form-label">Enter Country</label>
+                    <input name="listing[country]" placeholder="Enter country" type="text"  class="form-control"value="<%=listing.country %>" required>
+                </div>
+            </div>
+
+            
+    
+            <div class="mb-3">
+                <label for="description" class="form-label">Enter Description</label>
+                <textarea name="listing[description]" placeholder="Enter description" class="form-control" required><%=listing.description %> </textarea>
+            </div>
+            <br>
+            <button  class="btn btn-custom mb-5" type="submit">Update</button>
+        </form>
+        </div>
+    </div>
+
+    
+      

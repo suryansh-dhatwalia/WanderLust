@@ -3,7 +3,7 @@ const initData = require("./data.js"); // Data imported
 const Listing = require("../models/listing.js"); // Schema imported
 
 async function main(){
-    mongoose.connect('mongodb://127.0.0.1:27017/wanderlust');
+    mongoose.connect('mongodb://localhost:27017/wanderlust');
 }
 main()
 .then((res) => console.log("Connection Successful"))

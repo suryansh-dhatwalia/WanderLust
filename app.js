@@ -9,6 +9,9 @@ const ejsmate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressError = require("./utils/ExpressError.js");
 const { error } = require("console");
+const { listingSchema } = require("./schema.js");
+
+
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -30,6 +33,17 @@ app.listen(port, () => {
     console.log(`The app is listening on port ${port}`);
 });
 
+const validateSchema = (req,res,next) => {
+    const { error } = listingSchema.validate(req.body);
+    if(error){
+        let errMsg = error.details.map((el) => el.message).join(",");
+        throw new ExpressError(400,errMsg);
+    }
+    else{
+        next();
+    }
+};
+
 // ✅ ROOT ROUTE
 app.get("/", (req, res) => {
     res.send("Hi root");
@@ -47,15 +61,9 @@ app.get("/listings/new", (req, res) => {
 });
 
 // ✅ CREATE ROUTE - Add new listing to DB
-app.post("/listings", wrapAsync(async (req, res) => {
+app.post("/listings", validateSchema ,wrapAsync(async (req, res) => {
     
     let newListing = new Listing(req.body.listing);
-    if(!req.body.listing){
-        throw new ExpressError(400,"Send Some Valid Data");
-    }
-    if(!req.body.listing.description){
-        throw new ExpressError(400,"Description is missing");
-    }
     await newListing.save();
     res.redirect("/listings");
 }));
@@ -68,14 +76,14 @@ app.get("/listings/:id", wrapAsync(async (req, res) => {
 }));
 
 // ✅ EDIT ROUTE - Show form to edit a listing
-app.get("/listings/:id/edit", wrapAsync(async (req, res) => {
+app.get("/listings/:id/edit",wrapAsync(async (req, res) => {
     let { id } = req.params;
     let listing = await Listing.findById(id);
     res.render("listings/edit.ejs", { listing });
 }));
 
 // ✅ UPDATE ROUTE - Update listing in DB
-app.patch("/listings/:id", wrapAsync(async (req, res) => {
+app.patch("/listings/:id",validateSchema,wrapAsync(async (req, res) => {
     let { id } = req.params;
     await Listing.findByIdAndUpdate(id, { ...req.body.listing }, { new: true });
     res.redirect(`/listings/${id}`);

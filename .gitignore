@@ -13,3 +13,4 @@ node_modules/
 # Optional: Ignore build or temp folders if you ever create them
 dist/
 tmp/
+

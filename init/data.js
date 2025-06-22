@@ -347,6 +347,227 @@ const sampleListings = [
     location: "Costa Rica",
     country: "Costa Rica",
   },
+  {
+    "title": "Desert Hideaway in Joshua Tree",
+    "description": "Stargaze under clear desert skies in this cozy retreat near Joshua Tree National Park.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1542317854-8e46f3d5c8fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 900,
+    "location": "Joshua Tree",
+    "country": "United States"
+  },
+  {
+    "title": "Chic Studio in Paris",
+    "description": "Enjoy Parisian charm in this modern studio steps from iconic landmarks.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1800,
+    "location": "Paris",
+    "country": "France"
+  },
+  {
+    "title": "Riverside Cottage in Vermont",
+    "description": "Relax by the river in this rustic cottage nestled in lush Vermont woods.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1505740106531-4243f3831e1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1100,
+    "location": "Vermont",
+    "country": "United States"
+  },
+  {
+    "title": "Penthouse Loft in London",
+    "description": "Live luxe in this spacious penthouse with Skyline views over London.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 4000,
+    "location": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "title": "Coastal Cottage in Cornwall",
+    "description": "Charming seaside cottage with scenic coastal walks in Cornwall.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1300,
+    "location": "Cornwall",
+    "country": "United Kingdom"
+  },
+  {
+    "title": "Urban Condo in Toronto",
+    "description": "Stylish condo steps from downtown Toronto, perfect for city adventurers.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1600,
+    "location": "Toronto",
+    "country": "Canada"
+  },
+  {
+    "title": "Eco Cabin in New Zealand",
+    "description": "Off-grid eco cabin surrounded by native bush in New Zealand.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1400,
+    "location": "Queenstown",
+    "country": "New Zealand"
+  },
+  {
+    "title": "Chalet in the Dolomites",
+    "description": "Enjoy sweeping mountain views from this alpine chalet in Italy.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1479894105653-33b61a53a5ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 2200,
+    "location": "Dolomites",
+    "country": "Italy"
+  },
+  {
+    "title": "Studio in Barcelona",
+    "description": "Bright studio located in the heart of vibrant Barcelona.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1500,
+    "location": "Barcelona",
+    "country": "Spain"
+  },
+  {
+    "title": "Countryside Villa in Provence",
+    "description": "Lavender fields and sunshine await at this quaint villa in Provence.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1506956196006-9f3373f8392a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 2000,
+    "location": "Provence",
+    "country": "France"
+  },
+  {
+    "title": "Treehouse in the Redwood Forest",
+    "description": "Sleep among towering redwoods in this handcrafted treehouse retreat.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1493558103817-bcb5e1f83f17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1200,
+    "location": "California",
+    "country": "United States"
+  },
+  {
+    "title": "Yurt in the Mongolian Steppe",
+    "description": "Experience nomadic life in this authentic yurt on the vast Mongolian plains.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 500,
+    "location": "Mongolia",
+    "country": "Mongolia"
+  },
+  {
+    "title": "Villa on the Amalfi Coast",
+    "description": "Picturesque villa perched above the cliffs on Italy’s Amalfi Coast.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1504588027133-7cb7183a9536?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 3500,
+    "location": "Amalfi Coast",
+    "country": "Italy"
+  },
+  {
+    "title": "Cosy Cabin in the Scottish Highlands",
+    "description": "Peak comfort and solitude in a quaint cabin in Scotland’s highlands.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1470163395405-d2b6aa0a1f72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1200,
+    "location": "Scottish Highlands",
+    "country": "United Kingdom"
+  },
+  {
+    "title": "Modern Condo in Singapore",
+    "description": "Sleek condo in the heart of Singapore’s central business district.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1700,
+    "location": "Singapore",
+    "country": "Singapore"
+  },
+  {
+    "title": "Beach Bungalow in Zanzibar",
+    "description": "Relax in this charming bungalow steps from the turquoise waters of Zanzibar.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1300,
+    "location": "Zanzibar",
+    "country": "Tanzania"
+  },
+  {
+    "title": "Loft in Berlin",
+    "description": "Industrial-chic loft in the trendy Kreuzberg neighborhood.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1598928506312-16e85d803c28?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 1400,
+    "location": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "title": "Igloo in Arctic Finland",
+    "description": "Stay warm under the Northern Lights in this cozy Arctic igloo.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1543349684-4ca4818d5e67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 2500,
+    "location": "Lapland",
+    "country": "Finland"
+  },
+  {
+    "title": "Safari Tent in Botswana",
+    "description": "Wake up to wildlife on your doorstep in this luxury safari tent camp.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1506512277088-457d25d2d30a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 2800,
+    "location": "Okavango Delta",
+    "country": "Botswana"
+  },
+  {
+    "title": "Designer Loft in Milan",
+    "description": "Fashion-forward loft near Milan’s stylish Brera district.",
+    "image": {
+      "filename": "listingimage",
+      "url": "https://images.unsplash.com/photo-1505691723518-36a5985b7ecf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+    },
+    "price": 2100,
+    "location": "Milan",
+    "country": "Italy"
+  }
+
 ];
 
 
